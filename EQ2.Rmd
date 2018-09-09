@@ -1,0 +1,39 @@
+---
+title: "EQ2"
+author: "Daniel Park"
+date: "September 2018"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+* Showing that Cov(Y,Y) = Var(Y). 
+
+\begin{aligned}
+
+\sigma\{Y,Y\} & = E\{(Y-E[Y])(Y-E[Y])\} \\
+& = E\{(Y-E[Y])^2\} \\
+& = \sigma^2\{Y\} 
+
+\end{aligned}
+
+* What is the correlation between Y and Y?
+
+\begin{aligned}
+
+\rho\{Y,Y\} & = \frac{\sigma\{Y,Y\}}{\sigma\{Y\}\sigma\{Y\}} \\
+& = \frac{\sigma^2\{Y\}}{\sigma^2\{Y\}} \\
+& = 1
+
+\end{aligned}
+
+  + The correlation between Y and Y is 1, which means there is a perfect, positive relationship between Y and itself. If we imagine a plot of Y versus Y, the points would lie on a straight line with a slope of 1. This makes sense because if we know Y, we will always know what Y is if we try to predict what it is; it is itself.
+  
+* Covariance is a measure of correlation between two variables and the variability of both variables. Larger variability in either of the variables means their covariance is greater; a stronger correlation increases the absolute value of covariance.
+
+$$\sigma\{Y,Z\} = \rho\{Y,Z\}\sigma\{Y\}\sigma\{Z\} $$
+
+* Most important point: We have to be careful about using formulas that have special cases for independent random variables. We shouldn't assume independence without considering whether it is reasonable or checking.
+
+* Muddiest thing: I get that covariance is a measure of correlation and variance, but why do we care about it? In other words, how do we interpret covariance in data analysis?
